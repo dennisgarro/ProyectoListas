@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList<Empleados> empleados = new LinkedList<>();
+        ModificarEdad me = new ModificarEdad();
         for (int i = 0; i < 3; i++) {
             Empleados item = new Empleados(null, null, null, i, null);
             System.out.println("Ingrese el Nombre");
@@ -20,6 +21,8 @@ public class Main {
             item.setCargo(sc.next());
             empleados.add(item);
         }
+
+        empleados = me.Edad(empleados);
         String cadena = "";
         for (Empleados empleado : empleados) {
             cadena = cadena + " \n" + empleado.getNombre() + "\n" + empleado.getApellido() + "\n" +
