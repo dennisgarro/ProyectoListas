@@ -5,9 +5,8 @@ public class MostrarLista
     public String mostrarLista(LinkedList<Empleados> empleados)
     {
         String cadena = "";
-        for (Empleados empleado : empleados) {
-            cadena = cadena + " \n" + empleado.getNombre() + "\n" + empleado.getApellido() + "\n" +
-                    empleado.getDireccion() + "\n" + empleado.getEdad() + "\n" + empleado.getCargo() + "\n";
+        for (Empleados employee : empleados) {
+            cadena = cadena + "[" + employee.getNombre() + "]" + "[" + employee.getApellido() + "]" + "[" + employee.getEdad() + "]" + "[" + employee.getDireccion() + "]" + "[" + employee.getCargo() + "]" + "\n";
 
         }
         return cadena;
