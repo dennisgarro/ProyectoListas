@@ -23,12 +23,7 @@ public class Main {
         }
 
         empleados = me.Edad(empleados);
-        String cadena = "";
-        for (Empleados empleado : empleados) {
-            cadena = cadena + " \n" + empleado.getNombre() + "\n" + empleado.getApellido() + "\n" +
-                    empleado.getDireccion() + "\n" + empleado.getEdad() + "\n" + empleado.getCargo() + "\n";
-
-        }
-        System.out.println(cadena);
+        MostrarLista ml = new MostrarLista();
+        System.out.println(ml.mostrarLista(empleados));
     }
 }
