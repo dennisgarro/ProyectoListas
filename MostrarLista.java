@@ -6,6 +6,7 @@ public class MostrarLista
     {
         String cadena = "";
         int i = 0;
+        String cadenita = "";
         for (Empleados employee : empleados) {
             cadena = cadena + "[" + employee.getNombre() + "]" + "[" + employee.getApellido() + "]" + "[" + employee.getEdad() + "]" + "[" + employee.getDireccion() + "]" + "[" + employee.getCargo() + "]" + "\n";
 
